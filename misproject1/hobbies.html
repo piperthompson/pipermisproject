@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container bar">
+            <a class="site-brand" href="index.html">
+                <img class="avatar" src="media/headshot.jpg" alt="Professional headshot">
+                <span>My Portfolio</span>
+            </a>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a class="active" href="hobbies.html">Hobbies</a>
+                <a href="discover.html">Discover</a>
+                <a href="resume.html">Resume</a>
+                <a href="career.html">Career</a>
+                <a href="game.html">Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container stack">
+                <h1 style="margin:0;">Hobbies & Interests</h1>
+                <p class="muted">A deeper look at what I enjoy doing in my free time and why these activities matter to me.</p>
+
+                <div class="grid-3">
+                    <figure class="card stack">
+                        <img src="media/hobby1.jpg" alt="Hobby 1">
+                        <figcaption>
+                            <h3 style="margin:0;">Hobby One</h3>
+                            <p>Detailed description of this hobby, how I got started, and what I’ve learned from it. Highlights include challenges I’ve taken on and milestones I’m proud of.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card stack">
+                        <img src="media/hobby2.jpg" alt="Hobby 2">
+                        <figcaption>
+                            <h3 style="margin:0;">Hobby Two</h3>
+                            <p>What draws me to this activity, how often I practice it, and the communities or groups I’ve connected with while participating.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card stack">
+                        <img src="media/hobby3.jpg" alt="Hobby 3">
+                        <figcaption>
+                            <h3 style="margin:0;">Hobby Three</h3>
+                            <p>Personal story about a memorable experience related to this hobby and why it continues to be meaningful to me.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card stack">
+                        <h2 style="margin:0;">Why These Matter</h2>
+                        <p>These activities help me develop focus, creativity, and resilience. They also provide balance and energy that carry over into my academic and professional life.</p>
+                    </div>
+                    <div class="card stack">
+                        <h2 style="margin:0;">Stories & Highlights</h2>
+                        <p>Here I can share anecdotes—like completing a challenge, participating in events, or collaborating with friends—that shaped how I approach learning and teamwork.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> My Portfolio</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+    
+</html>
+

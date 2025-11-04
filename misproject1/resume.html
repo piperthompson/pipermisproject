@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container bar">
+            <a class="site-brand" href="index.html">
+                <img class="avatar" src="media/seniorpicture.jpg" alt="Professional headshot">
+                <span>My Portfolio</span>
+            </a>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="discover.html">Discover</a>
+                <a class="active" href="resume.html">Resume</a>
+                <a href="career.html">Career</a>
+                <a href="game.html">Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container stack">
+                <div class="card" style="display:flex; align-items:center; justify-content:space-between; gap:16px;">
+                    <div>
+                        <h1 style="margin:0;">Resume</h1>
+                        <p class="muted">Web-formatted resume with education, experience, skills, and achievements.</p>
+                    </div>
+                    <a class="btn primary" href="media/resume.pdf" download>
+                        <i class="fa fa-download"></i> Download PDF
+                    </a>
+                </div>
+
+                <div class="resume">
+                    <section class="card">
+                        <h2 style="margin:0;">Education</h2>
+                        <h3>University of Minnesota Duluth</h3>
+                        <p class="muted">Degree / Major — Expected Graduation Year</p>
+                        <ul>
+                            <li>Relevant coursework or honors</li>
+                            <li>Clubs, organizations, or leadership</li>
+                        </ul>
+                    </section>
+
+                    <section class="card">
+                        <h2 style="margin:0;">Experience</h2>
+                        <h3>Role — Company</h3>
+                        <p class="muted">Month YYYY – Month YYYY</p>
+                        <ul>
+                            <li>Impact-focused bullet describing what you built or improved</li>
+                            <li>Quantified results where possible</li>
+                            <li>Technologies used</li>
+                        </ul>
+                        <h3>Role — Company</h3>
+                        <p class="muted">Month YYYY – Month YYYY</p>
+                        <ul>
+                            <li>Another achievement or responsibility</li>
+                            <li>Teamwork and collaboration examples</li>
+                            <li>Customer or stakeholder value created</li>
+                        </ul>
+                    </section>
+
+                    <section class="card">
+                        <h2 style="margin:0;">Skills</h2>
+                        <ul>
+                            <li>Web: HTML, CSS, JavaScript</li>
+                            <li>Tools: Git, VS Code</li>
+                            <li>Soft: Communication, teamwork, problem solving</li>
+                        </ul>
+                    </section>
+
+                    <section class="card">
+                        <h2 style="margin:0;">Achievements</h2>
+                        <ul>
+                            <li>Scholarships, awards, certifications</li>
+                            <li>Hackathons or competitions</li>
+                            <li>Community or volunteer contributions</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> My Portfolio</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Interests | Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container bar">
+            <a class="site-brand" href="index.html">
+                <img class="avatar" src="media/headshot.jpg" alt="Professional headshot">
+                <span>My Portfolio</span>
+            </a>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="discover.html">Discover</a>
+                <a href="resume.html">Resume</a>
+                <a class="active" href="career.html">Career</a>
+                <a href="game.html">Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container stack">
+                <h1 style="margin:0;">Career Interests</h1>
+                <p class="muted">Two organizations I’m excited about, why I’m drawn to them, and how my skills align.</p>
+
+                <div class="grid-2">
+                    <article class="card stack">
+                        <h2 style="margin:0;">Company One</h2>
+                        <p><strong>Website:</strong> <a href="https://example.com" target="_blank" rel="noopener">example.com</a></p>
+                        <p><strong>Address:</strong> 123 Main St, City, State</p>
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p><strong>Email:</strong> careers@example.com</p>
+                        <h3>Why I’m Interested</h3>
+                        <p>The company’s mission and culture resonate with my values. I admire their focus on innovation and user experience.</p>
+                        <h3>Why I’m Qualified</h3>
+                        <ul>
+                            <li>Relevant coursework and projects</li>
+                            <li>Web development and UX skills</li>
+                            <li>Team collaboration and communication</li>
+                        </ul>
+                        <h3>Fit & Alignment</h3>
+                        <p>My strengths in front-end development and problem solving align with their product needs and customer goals.</p>
+                    </article>
+
+                    <article class="card stack">
+                        <h2 style="margin:0;">Company Two</h2>
+                        <p><strong>Website:</strong> <a href="https://example.org" target="_blank" rel="noopener">example.org</a></p>
+                        <p><strong>Address:</strong> 456 First Ave, City, State</p>
+                        <p><strong>Phone:</strong> (555) 987-6543</p>
+                        <p><strong>Email:</strong> hiring@example.org</p>
+                        <h3>Why I’m Interested</h3>
+                        <p>Their products make a tangible impact. I appreciate their commitment to accessibility and continuous learning.</p>
+                        <h3>Why I’m Qualified</h3>
+                        <ul>
+                            <li>Hands-on JavaScript projects</li>
+                            <li>Strong fundamentals in HTML/CSS</li>
+                            <li>Experience building responsive UIs</li>
+                        </ul>
+                        <h3>Fit & Alignment</h3>
+                        <p>My interests in usability and performance complement their engineering priorities and user-base.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> My Portfolio</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+</html>
+

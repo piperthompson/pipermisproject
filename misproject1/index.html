@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Piper Thompson</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Professional portfolio: introduction, hobbies, UMD & Duluth, resume, career interests, and interactive game.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container bar">
+            <a class="site-brand" href="index.html">
+                <img class="avatar" src="media/headshot.jpg" alt="Professional headshot">
+                <span>My Portfolio</span>
+            </a>
+            <nav class="site-nav">
+                <a class="active" href="index.html">Home</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="discover.html">Discover</a>
+                <a href="resume.html">Resume</a>
+                <a href="career.html">Career</a>
+                <a href="game.html">Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="card stack">
+                    <h1 style="margin:0">Welcome</h1>
+                    <p class="muted">Thanks for visiting my professional site. I’m excited to share a bit about who I am, what I enjoy, and where I’m headed next.</p>
+                    <div class="grid-2">
+                        <div class="card">
+                            <h2>About Me</h2>
+                            <p>I am a dedicated student at the University of Minnesota Duluth with a passion for technology, learning, and building useful experiences on the web. I value teamwork, curiosity, and continuous improvement.</p>
+                        </div>
+                        <div class="card">
+                            <h2>Quick Intro Video</h2>
+                            <video controls poster="media/video-poster.jpg">
+                                <source src="media/welcome.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <aside class="card stack">
+                    <img src="media/headshot.jpg" alt="Headshot" style="border-radius:12px;">
+                    <div>
+                        <h2 style="margin:0 0 6px;">Professional Overview</h2>
+                        <p class="muted">Focused on front-end development, user-centered design, and creating engaging, accessible web experiences.</p>
+                        <a class="btn primary" href="resume.html">View Resume</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container stack">
+                <h2>Hobbies Snapshot</h2>
+                <p class="muted">A glimpse at a few things I enjoy outside the classroom.</p>
+                <div class="grid-2">
+                    <div class="card stack">
+                        <img src="media/hobby1.jpg" alt="Hobby 1">
+                        <h3 style="margin:0;">Hobby One</h3>
+                        <p>Short summary of this hobby and why it matters to me. The full story and photos are on the Hobbies page.</p>
+                        <a class="btn" href="hobbies.html">Explore Hobbies</a>
+                    </div>
+                    <div class="card stack">
+                        <img src="media/hobby2.jpg" alt="Hobby 2">
+                        <h3 style="margin:0;">Hobby Two</h3>
+                        <p>Another interest that keeps me motivated and balanced. See more examples and experiences on the Hobbies page.</p>
+                        <a class="btn" href="hobbies.html">Explore Hobbies</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--surface);">
+            <div class="container grid-3">
+                <div class="card">
+                    <h3 style="margin:0 0 6px;">Why UMD</h3>
+                    <p class="muted">My reasons for choosing the University of Minnesota Duluth and how it supports my academic and professional goals.</p>
+                    <a class="btn" href="discover.html">Discover</a>
+                </div>
+                <div class="card">
+                    <h3 style="margin:0 0 6px;">Duluth Highlights</h3>
+                    <p class="muted">What I love about Duluth and the surrounding area—from nature to community.</p>
+                    <a class="btn" href="discover.html">Discover</a>
+                </div>
+                <div class="card">
+                    <h3 style="margin:0 0 6px;">Interactive Game</h3>
+                    <p class="muted">Enjoy a JavaScript-based maze game our team built together.</p>
+                    <a class="btn" href="game.html">Play the Game</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div>© <span id="year"></span> My Portfolio</div>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
