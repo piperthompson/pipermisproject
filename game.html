@@ -357,6 +357,10 @@
             </nav>
         </div>
     </header>
+    <audio id="backgroundMusic" loop>
+        <source src="audio/stroll.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <div class="game-container">
         <div class="game-header">
             <h1 class="game-title">🎮 Maze Adventure</h1>
@@ -433,6 +437,7 @@
             constructor() {
                 this.canvas = document.getElementById('mazeCanvas');
                 this.ctx = this.canvas.getContext('2d');
+                this.backgroundMusic = document.getElementById('backgroundMusic');
                 this.cellSize = 20;
                 this.maze = [];
                 this.player = { x: 1, y: 1 };
@@ -824,6 +829,10 @@
                 this.generateMaze();
                 this.startTimer();
                 this.updateStats();
+                // Start background music
+                this.backgroundMusic.play().catch(error => {
+                    console.log('Audio play failed:', error);
+                });
             }
 
             togglePause() {
@@ -832,9 +841,15 @@
                 if (this.gamePaused) {
                     pauseBtn.innerHTML = '<i class="fas fa-play"></i> Resume';
                     pauseBtn.className = 'btn btn-success';
+                    // Pause background music
+                    this.backgroundMusic.pause();
                 } else {
                     pauseBtn.innerHTML = '<i class="fas fa-pause"></i> Pause';
                     pauseBtn.className = 'btn btn-warning';
+                    // Resume background music
+                    this.backgroundMusic.play().catch(error => {
+                        console.log('Audio play failed:', error);
+                    });
                 }
             }
 
@@ -857,6 +872,10 @@
             gameWin() {
                 this.gameRunning = false;
                 this.stopTimer();
+                
+                // Stop background music
+                this.backgroundMusic.pause();
+                this.backgroundMusic.currentTime = 0;
                 
                 const finalTime = document.getElementById('timer').textContent;
                 document.getElementById('finalTime').textContent = finalTime;
