@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piper Thompson — Home</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Piper Thompson — professional portfolio: introduction, hobbies, resume, and projects.">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container bar">
+            <a class="site-brand" href="index.html" aria-label="Piper Thompson home">
+                <img class="avatar" src="media/seniorpicture.jpg" alt="Senior portrait of Piper Thompson">
+                <span>Piper Thompson</span>
+            </a>
+            <nav class="site-nav" role="navigation" aria-label="Primary">
+                <a class="active" href="index.html">Home</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="discover.html">Discover</a>
+                <a href="resume.html">Resume</a>
+                <a href="career.html">Career</a>
+                <a href="game.html">Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="welcome-heading">
+            <div class="container hero-grid">
+                <div class="card stack">
+                    <h1 id="welcome-heading" style="margin:0">Welcome — I'm Piper Thompson</h1>
+                    <p class="muted">Hello! I'm a student at the University of Minnesota Duluth. I am majoring in marketing. Check out the rest of my website to learn more about me!</p>
+
+                    <!-- Show the senior portrait first, with the welcome video beneath it -->
+                    <div class="hero-photo">
+                        <img class="hero-profile" src="media/seniorpicture.jpg" alt="Senior portrait of Piper Thompson">
+                    </div>
+
+                    <!-- welcome video moved to its own section below for greater prominence -->
+                </div>
+
+                <aside class="card stack" aria-labelledby="profile-heading">
+                    <div>
+                        <h2 id="profile-heading" style="margin:0 0 6px;">Professional Overview</h2>
+                        <p class="muted">I am a dedicated and motivated student pursuing a Marketing degree at the University of Minnesota Duluth, with a strong foundation in leadership, customer service, and youth mentorship. Through roles in hospitality, childcare, and martial arts instruction, I’ve developed exceptional communication skills, a strong work ethic, and the ability to adapt and problem-solve in fast-paced environments.</p>
+
+                        <p class="muted">As a 4th degree black belt and former Taekwondo instructor, I bring discipline, patience, and a commitment to continuous improvement to everything I do. I’ve earned recognition for academic excellence—including a STEM Academy seal, Dean’s List honors, and membership in the National Honor Society—reflecting my attention to detail, reliability, and determination.</p>
+
+                        <p class="muted">Whether supporting guests in a busy restaurant, guiding children through daily activities, or leading students toward their next belt level, I strive to create positive experiences and build trusting relationships. I’m passionate about helping others, learning new skills, and contributing meaningfully in every role I take on.</p>
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Dedicated welcome video section (moved out of hero and enlarged) -->
+        <section class="section welcome-section" aria-labelledby="welcome-video-heading">
+            <div class="container">
+                <div class="card">
+                    <h2 id="welcome-video-heading" style="margin:0 0 8px;">Welcome Video</h2>
+                    <video class="welcome-video welcome-large" controls poster="media/video-poster.jpg" aria-label="Welcome video from Piper">
+                        <source src="media/welcomevideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="hobbies-heading">
+            <div class="container stack">
+                <h2 id="hobbies-heading">Hobbies Snapshot</h2>
+                <p class="muted">A few things I enjoy outside of my studies and projects.</p>
+
+                <div class="home-tiles">
+                    <div class="card stack">
+                        <img class="compact-thumb large" src="media/karate.jpg" alt="Karate practice">
+                        <h3 style="margin:0;">Karate</h3>
+                        <p>What started as a simple Groupon for self-defense classes turned into an 11-year journey that shaped my life. My family committed to earning our black belts, and although I didn’t love karate at first, it grew into my passion. I eventually became an instructor, which built my confidence and became one of my favorite jobs. Even though college took me away, I hope to return—because that one spontaneous decision became one of the most meaningful parts of my life.</p>
+                        <a class="btn" href="hobbies.html">Read More</a>
+                    </div>
+
+                    <div class="card stack">
+                        <img class="compact-thumb large" src="media/wildgame.jpg" alt="Watching sports">
+                        <h3 style="margin:0;">Watching Sports</h3>
+                        <p>I started watching hockey with my dad in 6th grade, and learning the players drew me into the sport. After studying the roster, we went to our first NHL game as a family, and my love for hockey grew from there. I’ve followed NHL, college, and PWHL teams, and one of my favorite memories is meeting players and staff at a Minnesota Wild outdoor practice. Hockey means a lot to me not just because I love the game, but because it brought my dad and me closer.</p>
+                        <a class="btn" href="hobbies.html">Read More</a>
+                    </div>
+
+                    <!-- Creative Writing tile removed per user request -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom highlights removed per user request: Why UMD / Duluth Highlights / Interactive Game -->
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div>© <span id="year"></span> Piper Thompson</div>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>

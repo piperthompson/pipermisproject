@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover UMD & Duluth | Piper Thompson</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container bar">
+            <a class="site-brand" href="index.html" aria-label="Piper Thompson home">
+                <img class="avatar" src="media/seniorpicture.jpg" alt="Senior portrait of Piper Thompson">
+                <span>Piper Thompson</span>
+            </a>
+            <nav class="site-nav" role="navigation" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a class="active" href="discover.html">Discover</a>
+                <a href="resume.html">Resume</a>
+                <a href="career.html">Career</a>
+                <a href="game.html">Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container stack">
+                <h1 style="margin:0;">Discover UMD & Duluth</h1>
+                <p class="muted">Why I chose the University of Minnesota Duluth and what I appreciate about the city and surrounding area.</p>
+
+                <div class="grid-2">
+                    <div class="card stack">
+                        <h2 style="margin:0;">Why I Chose UMD</h2>
+                        <p>UMD offers the right blend of academic rigor, supportive faculty, and hands-on opportunities. The campus culture encourages exploration and collaboration, which aligns with how I learn best.</p>
+                        <ul>
+                            <li>Strong programs and approachable professors</li>
+                            <li>Opportunities for real-world projects</li>
+                            <li>Welcoming, close-knit community</li>
+                        </ul>
+                    </div>
+                    <div class="card stack">
+                        <h2 style="margin:0;">What I Like About Duluth</h2>
+                        <p>Duluth’s natural beauty, vibrant local scene, and friendly culture make it a great place to live and learn. From Lake Superior views to local cafes and trails, there’s always something to discover.</p>
+                        <ul>
+                            <li>Access to nature and outdoor activities</li>
+                            <li>Supportive local community</li>
+                            <li>Inspiring environment for study and growth</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card stack">
+                        <h2 style="margin:0;">Duluth Marketing Video</h2>
+                        <video controls poster="media/umd-poster.jpg">
+                            <source src="media/Dultuh-Marketing-Video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Caption removed per user request -->
+                    </div>
+                    <div class="card stack">
+                        <h2 style="margin:0;">Personal Experiences</h2>
+                        <p class="muted">I really enjoy living with friends. We get along well and have similar interests. I also enjoy going to hockey games with friends. Another highlight of living in Duluth is my job at Texas Roadhouse. It is one of the best jobs I have ever had and I have met some really great people.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> My Portfolio</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Piper Thompson</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="container bar">
+            <a class="site-brand" href="index.html" aria-label="Piper Thompson home">
+                <img class="avatar" src="media/seniorpicture.jpg" alt="Senior portrait of Piper Thompson">
+                <span>Piper Thompson</span>
+            </a>
+            <nav class="site-nav" role="navigation" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a class="active" href="hobbies.html">Hobbies</a>
+                <a href="discover.html">Discover</a>
+                <a href="resume.html">Resume</a>
+                <a href="career.html">Career</a>
+                <a href="game.html">Game</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container stack">
+                <h1 style="margin:0;">Hobbies & Interests</h1>
+                <p class="muted">A deeper look at what I enjoy doing in my free time and why these activities matter to me.</p>
+
+                <div class="grid-3">
+                    <div class="card stack hobby-inline">
+                        <div class="hobby-row">
+                            <img class="hobby-img" src="media/karate.jpg" alt="Karate practice">
+                            <figcaption style="flex:1;min-width:220px;">
+                                <h3 style="margin:0;">Karate</h3>
+                                <p>When I was younger my parents decided to sign me and my brother up to learn some self-defense. They found a Groupon online for ATA Karate. We went in for a meeting with the head instructor/owner and somehow walked out of that meeting, having signed up for a family membership for my dad, brother, and I. Not only that but also uniforms and gear for each of us. We don’t really know what happened that day, but we were excited to start.</p>
+                                <p>About 2 months later we had another meeting with him, and he convinced us to upgrade to a leadership membership. Again, we walked out of there not knowing how that happened. From then on, we set a goal as a family to get our black belts. I was not a huge fan of karate at first and said I would not continue after black belt. Some time went on and my dad said he wanted to get his 4th degree because that was considered expert level. No one thought we would be there that long. I started to really like it and decided to stop my other sports.</p>
+                                <p>Three years ago the owner asked if I would like to start training to be an instructor. At the time I was absolutely terrified of public speaking and told him no. Four to five months later my brother started working there and since we are very competitive, I asked if the offer was still available and he said yes. I was also working at a restaurant at the time but quit soon after to teach more. It was scary at first, but I fell in love with it. Not only was it a great job but it also built my confidence so much.</p>
+                                <p>Unfortunately, I chose a college 3 hours away but once I am finished with that I would love to go back to that job. So who knew a Groupon would turn into over 11 years and one of the biggest parts of my life? Not me but I’m glad it did.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <figure class="card stack hobby-row">
+                        <img class="hobby-img" src="media/azhike.jpg" alt="Hiking trail with lake">
+                        <figcaption>
+                            <h3 style="margin:0;">Hiking</h3>
+                            <p>I have always loved being outside and exploring the random trails in the woods near my house growing up. In high school my family would find a new town or park to walk around. These usually included a 4-5 mile walk on a Sunday morning with lunch after. It was great family bonding but also a way to explore places around us.</p>
+                            <p>Two years ago for spring break I went to Arizona with my neighbor's family. One day the five of us kids decided to leave the resort and walk across a busy road to some smaller mountains we saw. There were no trails, but we were determined to go up it, so we did. It was tough but the view was great. We were out there for over an hour before we had to go back for dinner.</p>
+                            <p>The next day we drove to a mountain and went on an actual hike. It was a lot of fun. Since then, I came to Duluth a couple times to visit friends and went hiking a lot. Then I moved here in July and have been a few times (wish I had time for more).</p>
+                            <p>I am going to California this winter and I'm already creating a list of hikes I’ve found. It’s a great way to get exercise and rewarding with great views.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card stack hobby-row">
+                        <img class="hobby-img" src="media/wildgame.jpg" alt="Watching sports on TV">
+                        <figcaption>
+                            <h3 style="margin:0;">Watching Sports</h3>
+                            <p>I wasn’t really that into sports when I was younger but sometime around 6th grade I started watching hockey with my dad. I slowly started to learn the rules and got to know the players. Then my dad told me that once I knew the players, their numbers, and their positions, he would take me to a game.</p>
+                            <p>It was a little hard at first since players were getting traded and moved around all the time. I started to study the roster and got more into the games. After a while I learned the players and my dad started looking at tickets. We eventually went to a game as a family, and it was a great experience. I started to watch more and more hockey throughout the years — other NHL teams, college hockey, and my high school hockey team.</p>
+                            <p>Eventually I followed the PWHL and the Minnesota Frost when the league started a few years ago. I also got the chance to go to the Frost's home opener in their inaugural season. One of my favorite memories is when my dad and I went to a Minnesota Wild outdoor practice a few years ago. We got to meet General Manager Bill Guerin and talk to him for a while — and pet his dog.</p>
+                            <p>I also got a signed puck from Patrick Maroon and had my jersey signed by Kirill Kaprizov. We met a lot of other Wild fans and got to watch them practice and scrimmage. It was a great day and definitely worth standing in the cold for.</p>
+                            <p>Hockey is really important to me, not only because I love the game, but also because of how close it brought me and my dad.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Removed 'Why These Matter' and 'Stories & Highlights' sections as requested -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">© <span id="year"></span> My Portfolio</div>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+    
+</html>
+
